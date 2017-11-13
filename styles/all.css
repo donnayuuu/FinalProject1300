@@ -1,3 +1,112 @@
-body {
-  
+@font-face {
+  font-family:"Joti One";
+  src:url("../fonts/Joti_One/JotiOne-Regular.ttf");
+}
+
+@font-face {
+  font-family:"Architects Daughter";
+  src: url("../fonts/Architects_Daughter/ArchitectsDaughter-Regular.ttf");
+}
+/*general*/
+
+/*header*/
+#logo{
+  width:20%;
+  vertical-align:middle;
+  margin-right:40px;
+  display:inline-block;
+}
+
+#logo img{
+  width:100%;
+  border-color:black;
+  border-style: solid;
+}
+
+#header-title{
+  width: 70%;
+  font-size: 90px;
+  font-family: 'Joti One', cursive!important;
+  text-align: center;
+  display:inline-block;
+  vertical-align:middle;
+}
+
+#header{
+  background-color: #e35833;
+}
+/*navigation*/
+
+
+.navigation li{
+  display: inline-block;
+  list-style-type: none;
+  padding-right: 20px;
+  width: 15%;
+  text-align: center;
+  background-color: white;
+  text-align:center;
+  vertical-align:bottom;
+  padding-top: 5px;
+  border-color: black;
+  border-style: solid;
+  border-bottom-color: white;
+}
+
+.navigation a{
+  font-family: 'Joti One', cursive!important;
+}
+
+/*home*/
+#home1{
+  width: 80%;
+  display: block;
+  margin: auto;
+  margin-top: 120px;
+  margin-bottom:30px;
+}
+
+/*.shadow{
+  box-shadow: 20px 20px 20px rgb(231, 215, 198);
+  width:60%;
+  margin:auto;
+  margin-top:100px;
+  margin-bottom: 50px;
+
+}*/
+
+#sushi-icon{
+  padding: 30px;
+  margin:auto;
+  width:10%;
+  border-bottom-color: black;
+  border-bottom-style: double;
+}
+
+#home2{
+  width: 25%;
+  display: inline-block;
+  margin-right: 20px;
+  margin-top:30px;
+  border-color: rgb(231, 215, 198);
+  border-style: solid;
+}
+
+#home-bio{
+  width: 50%;
+  display: inline-block;
+  padding-top:30px;
+  vertical-align: top;
+}
+
+#home-bio h1{
+  font-family: 'Joti One', cursive!important;
+  font-size:30px;
+  color: #e35833;
+}
+
+#home-bio h2{
+  font-family: 'Architects Daughter', cursive!important;
+  font-size: 20px;
+
 }
