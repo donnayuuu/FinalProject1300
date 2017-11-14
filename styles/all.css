@@ -8,6 +8,13 @@
   src: url("../fonts/Architects_Daughter/ArchitectsDaughter-Regular.ttf");
 }
 /*general*/
+.page-title{
+  display: inline-block;
+}
+.page-title h1{
+    font-family: 'Joti One', cursive!important;
+    font-size: 60px;
+}
 
 /*header*/
 #logo{
@@ -35,10 +42,9 @@
 #header{
   background-color: #e35833;
 }
-/*navigation*/
-.navigation {
-  text-align: right;
-}
+
+/*NAVIGATION*/
+
 
 .navigation li{
   display: inline-block;
@@ -126,10 +132,6 @@
 
 /*LOCATIONS*/
 
-#location-page h1{
-  font-family: 'Joti One', cursive!important;
-  font-size: 60px;
-}
 
 #north h2, #ctown h2{
   font-family: 'Architects Daughter', cursive!important;
@@ -154,10 +156,10 @@
   display: block;
   border-color:black;
   border-style:solid;
-  margin: 25px;
+  width: 80%;
 }
 
-#sushi-icon-location{
+.sushi-icon-page{
   padding: 30px;
   margin:auto;
   width:10%;
@@ -165,9 +167,57 @@
   vertical-align: bottom;
 }
 
-#Locations-title{
+
+/*CONTACT*/
+
+#contact-page h2{
+  font-family: 'Joti One', cursive!important;
+  font-size:20px;
+  color: rgb(51, 130, 9);
+}
+
+#contact-page h3{
+  font-family: 'Architects Daughter', cursive!important;
+  font-size: 15px;
+}
+
+#contact-page a{
+  text-decoration: none;
+  color:black;
+}
+
+#contact-page a:hover{
+  color:gray;
+}
+
+#contact-page label,button{
+  font-family: 'Architects Daughter', cursive!important;
+  font-size: 15px;
+  }
+
+#form div, button{
+  margin: 20px;
+}
+
+#form-div, #contact-info{
+  width: 45%;
   display: inline-block;
 }
+
+#contact-info{
+  margin-left: 20px;
+  vertical-align: top;
+}
+
+#form-div{
+  margin-top: 20px;
+  vertical-align: top;
+  background-color:  #e35833;
+  border-color: black;
+  border-style: double;
+  border-width: thick;
+}
+
 
 /*menu*/
 .items h1 {
