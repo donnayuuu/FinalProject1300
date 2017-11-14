@@ -36,7 +36,9 @@
   background-color: #e35833;
 }
 /*navigation*/
-
+.navigation {
+  text-align: right;
+}
 
 .navigation li{
   display: inline-block;
@@ -147,4 +149,3 @@
   float: right;
   margin-right: 10px;
 }
-
