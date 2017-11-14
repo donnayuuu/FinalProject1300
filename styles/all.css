@@ -170,23 +170,23 @@
 
 /*CONTACT*/
 
-#contact-page h2{
+#contact-page h2, #submitted-page h2{
   font-family: 'Joti One', cursive!important;
   font-size:20px;
   color: rgb(51, 130, 9);
 }
 
-#contact-page h3{
+#contact-page h3, #submitted-page h3{
   font-family: 'Architects Daughter', cursive!important;
   font-size: 15px;
 }
 
-#contact-page a{
+#contact-page a, #submitted-page a{
   text-decoration: none;
   color:black;
 }
 
-#contact-page a:hover{
+#contact-page a:hover, #submitted-page a:hover{
   color:gray;
 }
 
@@ -202,24 +202,37 @@
 #form-div, #contact-info{
   width: 45%;
   display: inline-block;
+  vertical-align: top;
 }
 
 #contact-info{
   margin-left: 20px;
-  vertical-align: top;
 }
 
 #form-div{
   margin-top: 20px;
-  vertical-align: top;
   background-color:  #e35833;
   border-color: black;
   border-style: double;
   border-width: thick;
 }
 
+/*SUBMITTED*/
+#submitted-contact-info,#submitted-thanks{
+  width: 45%;
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 20px;
 
-/*menu*/
+}
+
+#submitted-thanks h1{
+  font-family: 'Architects Daughter', cursive!important;
+  font-size: 20px;
+}
+
+
+/*MENU*/
 .items h1 {
   font-family: 'Joti One', cursive!important;
 }
