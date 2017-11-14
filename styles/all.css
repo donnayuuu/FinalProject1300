@@ -168,3 +168,29 @@
 #Locations-title{
   display: inline-block;
 }
+
+/*menu*/
+.items h1 {
+  font-family: 'Joti One', cursive!important;
+}
+
+.items h2 {
+  font-family: 'Architects Daughter', cursive!important;
+  color: #e35833;
+}
+
+.items p {
+  font-family: sans-serif;
+  font-size: 19px;
+  font-weight: lighter;
+}
+
+.items main {
+  float: right;
+  width: 80%;
+}
+
+.items aside {
+  float: left;
+  width: 15%:
+}
