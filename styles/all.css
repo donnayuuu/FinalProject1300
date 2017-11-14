@@ -57,9 +57,15 @@
 
 .navigation a{
   font-family: 'Joti One', cursive!important;
+  text-decoration: none;
+  color:black;
 }
 
-/*home*/
+.navigation a:hover{
+  color:gray;
+}
+
+/*HOME*/
 #home1{
   width: 80%;
   display: block;
@@ -83,6 +89,11 @@
   width:10%;
   border-bottom-color: black;
   border-bottom-style: double;
+}
+
+#home-sushi{
+  width:80%;
+  margin:auto;
 }
 
 #home2{
@@ -113,39 +124,47 @@
 
 }
 
-/*Location Page*/
+/*LOCATIONS*/
 
-#location h1{
+#location-page h1{
   font-family: 'Joti One', cursive!important;
-  font-size:30px;
-  color: #e35833;
-  text-align: center;
+  font-size: 60px;
 }
 
-#location h2{
+#north h2, #ctown h2{
   font-family: 'Architects Daughter', cursive!important;
   font-size: 20px;
+  color: rgb(51, 130, 9);
+  text-align: center;
+
 }
 
-#location p{
-  font-family: 'Architects Daughter', cursive!important;
-  font-size: 16px;
+#north, #ctown{
+  width: 40%;
+  display: inline-block;
+  margin: 10px;
+  /*background-color: rgb(231, 215, 198);*/
+  border-color: #e35833;
+  border-style: double;
+  border-width: thick;
 }
 
-#location {
-  margin-left: auto;
-  margin-right: auto;
-  width:95%;
+#northloc, #ctownloc{
+  margin: auto;
+  display: block;
+  border-color:black;
+  border-style:solid;
+  margin: 25px;
 }
 
-.north {
-  width: 45%;
-  float: left;
-  margin-left: 5%;
+#sushi-icon-location{
+  padding: 30px;
+  margin:auto;
+  width:10%;
+  display: inline-block;
+  vertical-align: bottom;
 }
 
-.ctown {
-  width: 45%;
-  float: right;
-  margin-right: 10px;
+#Locations-title{
+  display: inline-block;
 }
