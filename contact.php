@@ -1,18 +1,81 @@
+<?php
+  $HIDDEN_ERROR_CLASS = "hidden";
+  $email = "";
+  $name = "";
+  $post = "";
+  $submit = $_REQUEST["submit"];
+
+  if (isset($submit)) {
+    $email = $_REQUEST["email"];
+    $name = $_REQUEST["name"];
+    $post = $_REQUEST["message"];
+    $ValidEmail= filter_var($email, FILTER_VALIDATE_EMAIL);
+
+    if(empty($email) || !$ValidEmail){
+      $isEmailValid = false;
+    }
+    else {
+      $isEmailValid = true;
+    }
+
+    if(empty($name)){
+      $isNameValid= false;
+    }
+    else{
+      $isNameValid = true;
+    }
+
+    if(empty($post)){
+      $isPostValid= false;
+    }
+    else{
+      $isPostValid = true;
+    }
+
+    $formValid=$isEmailValid && $isNameValid && $isPostValid;
+    if ($formValid) {
+      session_start();
+      $_SESSION['usermail'] = $email;
+      $_SESSION['username'] = $name;
+      $_SESSION['msg'] = $post;
+      header("Location: submitted.php");
+      return;
+    }
+  }
+  else {
+    $isEmailValid = true;
+    $isNameValid = true;
+    $isPostValid = true;
+  }
+?>
+
+
 <!DOCTYPE html>
 <html>
 <head>
   <meta charset="UTF-8">
   <title>That's How I Roll</title>
   <link rel="stylesheet" type="text/css" href="styles/all.css" media="all">
+
+  <script src="scripts/jquery-3.2.1.min.js" type="text/javascript"></script>
+  <script src="scripts/site.js" type="text/javascript"></script>
 </head>
 <body id="contact-page">
-  <?php
-   include "includes/header-navigation.php";
-  ?>
+  <div id="header">
+    <?php
+     include "includes/header-navigation.php";
+    ?>
+  </div>
 
   <div class="page-title">
     <h1> Contact Us</h1>
   </div>
+
+
+  <div class="sushi-icon-page">
+    <img class="page-sushi" alt="Sushi Icon" src="../images/home-sushi.jpg"/>
+  </div>
+  <br/>
 
   <div id="contact-info">
     <h2> Phone Number: </h2>
@@ -24,44 +87,34 @@
     <h3> thats.how.i.roll@outlook.com </h3>
   </div>
 
-
-  <!-- Still need to add error messages and corresponding javascript.
-  Validation will be done next, along with customized error messages,
-  and echoing the response back to the user. This will be tested as
-  required in the write up.
-  Pseudocode: First, check if the username is empty.
-  If the username is empty, do not allow the user to submit the page and show
-  them the error message (has not been written yet).
-  If the username has text in it,  do not show the error message.
-  Next, check if the email is empty, if it is empty show the error message and
-  do not allow the user to submit.
-  If it is not a valid email, do the same.
-  If it is valid and not empty, do not show the error message.
-  Then, check if the message is empty.
-  If the message is empty, show the error message and do not allow the user
-  to submit.
-  If it is not empty, do not show the error message.
-  If all of these fields are valid, allow the user to submit and go to the
-  submitted page. There should likely be a variable that will switch to false
-  if any of these fields are not valid, and if it is false at the end do not
-  allow the user to submit and show the respective error message.
-  If necessary, store the variables in php and display them on. -->
   <div id="form-div">
-    <form id="form" method="get" action="submitted.php">
+    <form id="form" method="post" action="contact.php" novalidate>
       <div>
         <label> Name: </label>
-        <input name="name" placeholder="Your Name">
+        <input name="name" id="uname" value= "<?php echo $name ?>" required>
       </div>
+      <span class="<?php if ($isNameValid) { echo($HIDDEN_ERROR_CLASS); } ?>" id="userError">
+        You must provide a name.
+      </span>
+
       <div>
         <label> Email: </label>
-        <input name="email" type="email" placeholder="Your Email">
+        <input name="email" type="email" id="uemail" value= "<?php echo $email ?>" required>
       </div>
+      <span class="<?php if ($isEmailValid) { echo($HIDDEN_ERROR_CLASS); } ?>" id="emailError">
+        You must provide a valid email.
+      </span>
+
       <div>
         <label for="message">Message:</label>
-        <textarea id="message" name="message" required></textarea>
+        <textarea id="message" name="message" value= "<?php echo $post ?>" required></textarea>
       </div>
+      <span class="<?php if ($isPostValid) { echo($HIDDEN_ERROR_CLASS); } ?>" id="msgError">
+        You must provide content here.
+      </span>
+
       <div>
-        <button type="submit" class="submit">Submit</button>
+        <button type="submit" name="submit" class="submit">Submit</button>
       </div>
     </form>
   </div>
