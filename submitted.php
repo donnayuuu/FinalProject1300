@@ -1,3 +1,28 @@
+<?php
+  session_start();
+  if (ISSET($_SESSION["username"])) {
+    $name = $_SESSION["username"];
+    }
+  else {
+    $name= "No name provided.";
+  }
+
+  if (ISSET($_SESSION["usermail"])) {
+    $email = $_SESSION["usermail"];
+    }
+  else{
+    $email = "No email provided.";
+  }
+
+  if (ISSET($_SESSION["msg"])) {
+    $message = $_SESSION["msg"];
+    }
+  else{
+    $message = "No message inputted.";
+  }
+?>
+
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -32,8 +57,10 @@
   </div>
 
   <div id="submitted-thanks">
-    <h1> Your information has been submitted.
-      Thank you for contacting us! We will respond as soon as possible.
+    <h1> Thank you, <?php echo($name); ?> ! Your email, <?php echo($email); ?>
+      has been successfully sent, along with the message of: <br/>
+      <?php echo($message); ?> <br/>
+      You will be conacted at this email shortly.
     </h1>
   </div>
 </body>
