@@ -1,0 +1,546 @@
+/*Font taken from https://fonts.google.com/specimen/Joti+One?selection.family=Joti+One*/
+@font-face {
+  font-family:"Joti One";
+  src:url("../fonts/Joti_One/JotiOne-Regular.ttf");
+}
+
+/*Font taken from https://fonts.google.com/specimen/Architects+Daughter*/
+@font-face {
+  font-family:"Architects Daughter";
+  src: url("../fonts/Architects_Daughter/ArchitectsDaughter-Regular.ttf");
+}
+/*general*/
+.page-title{
+  display: block;
+}
+.page-title h1{
+    font-family: 'Joti One', cursive!important;
+    font-size: 60px;
+}
+
+
+/*HEADER*/
+#logo{
+  width:10%;
+  vertical-align:middle;
+  margin-right:40px;
+  display:inline-block;
+}
+
+#logo img{
+  width:100%;
+  border-color:black;
+  border-style: solid;
+}
+
+#header-title{
+  width: 45%;
+  font-size: 60px;
+  font-family: 'Joti One', cursive!important;
+  text-align:left;
+  display:inline-block;
+  vertical-align:middle;
+}
+
+#header{
+  background-color: #e35833;
+  border-bottom-color:rgb(231, 215, 198);
+  border-bottom-style:dotted;
+  border-bottom-width: thick;
+}
+
+/*NAVIGATION*/
+
+
+.navigation li{
+  display: inline-block;
+  list-style-type: none;
+  padding-right: 20px;
+  width: 15%;
+  text-align: center;
+  background-color: white;
+  text-align:center;
+  vertical-align:bottom;
+  padding-top: 5px;
+  border-color: black;
+  border-style: solid;
+}
+.navigation{
+  border:0px;
+  margin:0px;
+  vertical-align: bottom;
+}
+.navigation a{
+  font-family: 'Joti One', cursive!important;
+  text-decoration: none;
+  color:black;
+}
+
+.navigation a:hover{
+  color:gray;
+}
+
+#navigation-div{
+  width:40%;
+  display: inline-block;
+}
+
+
+/*HOME*/
+#home1{
+  width: 100%;
+  display: block;
+  margin: auto;
+  margin-bottom:30px;
+  margin-top: 30px;
+}
+
+
+
+/*.shadow{
+  box-shadow: 20px 20px 20px rgb(231, 215, 198);
+  width:60%;
+  margin:auto;
+  margin-top:100px;
+  margin-bottom: 50px;
+}*/
+
+#sushi-icon{
+  margin:auto;
+  display:block;
+  padding-top: 40px;
+}
+
+#home-sushi{
+  width:80%;
+  margin:auto;
+}
+#top-half-home{
+  border-bottom-color: black;
+  border-bottom-style:dotted;
+  border-bottom-width:thick;
+  border-top-color: black;
+  border-top-style:dotted;
+  border-top-width:thick;
+}
+
+#bottom-half-home{
+  background-color: #e35833;
+  border-top-color: rgb(231, 215, 198);
+  border-top-style:dotted;
+  border-top-width:thick;
+}
+#home-bio-1,#home-bio-2{
+  width: 45%;
+  display: inline-block;
+  margin-top:30px;
+  vertical-align: top;
+  text-align:center;
+  float:left;
+  background-color: #e35833;
+  border-color:black;
+  border-style:dotted;
+  border-width:medium;
+}
+
+#home-bio-1{
+  margin-right: 10px;
+  margin-left: 10px;
+  height: 150px;
+}
+#home-bio-2{
+  float: right;
+  margin-left: 10px;
+  margin-right: 10px;
+  height: 150px;
+}
+
+
+#home-bio-1 h1, #home-bio-2 h1{
+  font-family: 'Joti One', cursive!important;
+  font-size:30px;
+  color: white;
+}
+
+#home-bio-1 h2, #home-bio-2 h2{
+  font-family: 'Architects Daughter', cursive!important;
+  font-size: 17px;
+
+}
+
+/*#home2-div{
+  display: inline-block;
+  width:60%;
+  /*background-color: white*/
+#home2{
+  border-color: rgb(231, 215, 198);
+  border-style: solid;
+  width: 250px;
+  margin: auto;
+  display:block;
+  margin-top: 50px;
+
+}
+
+
+#social-media{
+  margin:auto;
+  padding-top:70px;
+  padding-bottom:40px;
+}
+
+
+
+#social-media i{
+  font-size: 40px;
+  color: white;
+}
+
+#social-media i:hover{
+  color:gray;
+}
+
+#social-media th{
+  font-family: 'Joti One', cursive!important;
+  font-size:12px;
+  color: white;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+
+
+/*LOCATIONS*/
+
+.food-truck{
+  width:100px;
+  display:block;
+  margin:auto;
+  margin-top: 70px;
+  margin-bottom: 20px;
+}
+
+#north-toggle-div, #ctown-toggle-div{
+  display: block;
+  padding-bottom:40px;
+}
+
+#north-toggle-div table, #ctown-toggle-div table{
+  margin: auto;
+}
+
+#north-toggle th, #ctown-toggle th{
+  border-color:black;
+  border-style: solid;
+  padding: 20px;
+  width:40%;
+}
+
+.table-title th{
+  border-style:none;
+}
+
+#north-toggle-div, #ctown-toggle-div{
+  font-family: 'Joti One', cursive!important;
+}
+
+.table-title{
+  font-size: 20px;
+}
+
+#north-toggle-div a , #ctown-toggle-div a{
+  text-decoration:none;
+  color:black;
+}
+
+.toggle-selected{
+  background-color: #e35833;
+}
+
+#north h2, #ctown h2{
+  font-family: 'Architects Daughter', cursive!important;
+  font-size: 25px;
+  color: white;
+  text-align: center;
+
+}
+#north h1, #ctown h1{
+  font-size:35px;
+  font-family: 'Architects Daughter', cursive!important;
+  color: white;
+  text-align: center;
+}
+
+h3{
+  font-size:20px;
+  font-family: 'Architects Daughter', cursive!important;
+  color: black;
+  text-align: center;
+}
+#north, #ctown{
+  display: block;
+  width:50%;
+  margin: auto;
+  margin-top:40px;
+  margin-bottom:50px;
+  /*border-color:white;
+  border-style:dashed;
+  border-width: 10px;*/
+}
+
+.googlemap-figure{
+  display: block;
+  margin:auto;
+  width: 30%;
+}
+
+figcaption{
+  font-family: 'Architects Daughter', cursive!important;
+  font-size:20px;
+  text-align:center;
+  padding-bottom:10px;
+  padding-top: 20px;
+}
+#googleMap, #googleMap-2{
+  height: 300px;
+  width: 100%;
+  display: inline-block;
+  border-color: black;
+  border-style: double;
+  border-width: thick;
+  }
+
+
+.maps-section{
+  background-color: rgb(51, 130, 9);
+  border-top-color:black;
+  border-top-style:solid;
+  padding-bottom:20px;
+}
+
+
+
+/*CONTACT*/
+
+#contact-page h2, #submitted-page h2{
+  font-family: 'Joti One', cursive!important;
+  font-size:30px;
+  color: rgb(51, 130, 9);
+}
+
+#contact-page h3, #submitted-page h3{
+  font-family: 'Architects Daughter', cursive!important;
+  font-size: 25px;
+  text-align: left;
+  color:#e35833;
+}
+
+#contact-page a, #submitted-page a{
+  text-decoration: none;
+  color:black;
+}
+
+#contact-page a:hover, #submitted-page a:hover{
+  color:gray;
+}
+
+#contact-page label,button{
+  font-family: 'Architects Daughter', cursive!important;
+  font-size: 15px;
+  }
+
+#form div, button{
+  margin: 20px;
+}
+
+#form-div, #contact-info{
+  width: 45%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+#contact-info{
+  margin-left: 20px;
+}
+
+#form-div{
+  margin-top: 20px;
+  background-color:  #e35833;
+  border-color: black;
+  border-style: dashed;
+  border-width: 10px;
+}
+
+/*SUBMITTED*/
+#submitted-contact-info,#submitted-thanks{
+  width: 45%;
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 20px;
+
+}
+
+#submitted-thanks h1{
+  font-family: 'Architects Daughter', cursive!important;
+  font-size: 20px;
+}
+
+#emailError, #userError, #msgError{
+  font-size: 14px;
+  color: white;
+  font-weight: bold;
+  font-family: 'Architects Daughter', cursive!important;
+}
+
+.hidden {
+  display: none;
+}
+
+/*MENU*/
+
+.v{
+  font-family: 'Architects Daughter', cursive!important;
+  color: rgb(51, 130, 9);
+  font-size:15px;
+  font-style:italic;
+}
+
+.items h1 {
+  font-family: 'Joti One', cursive!important;
+}
+
+.items h2 {
+  font-family: 'Architects Daughter', cursive!important;
+  color: #e35833;
+}
+
+.items h3 {
+  font-family: 'Architects Daughter', cursive!important;
+  color: rgb(51, 130, 9);
+  font-size: 15px;
+  text-align: left;
+}
+
+.underline{
+  font-family: 'Architects Daughter', cursive!important;
+  color: black;
+  font-size: 15px;
+  text-align: left;
+  text-decoration: underline;
+}
+
+.items p {
+  font-family: sans-serif;
+  font-size: 15px;
+  font-weight: lighter;
+}
+
+.items main {
+  float: right;
+  width: 80%;
+  background-color: rgb(231, 215, 198);
+  height: 1000px;
+  padding: 18px;
+  border-left-color:black;
+  border-left-style:double;
+  border-bottom-color:black;
+  border-bottom-style:double;
+
+}
+
+.items aside {
+  float: left;
+  width: 20%;
+  margin-left: -40px;
+}
+
+.sidebar li{
+  list-style-type: none;
+  padding: 20px 10px;
+  text-align: center;
+  border-color: black;
+  border-style: solid;
+  border-bottom-color: white;
+}
+.active-menu{
+  background-color:#e35833;
+
+}
+
+#full-menu,#vegetarian-menu{
+  background-color:#e35833;
+  color:white;
+  border-color:black;
+  border-style:solid;
+}
+
+.sidebar li:last-child{
+  border-bottom-color: black;
+}
+
+.sidebar a{
+  font-family: 'Joti One', cursive!important;
+  text-decoration: none;
+  color:black;
+}
+
+.sidebar a:hover{
+  color:gray;
+}
+
+/*FOOTER*/
+p{
+  font-size: 10px;
+  font-family: sans-serif;
+  font-weight: lighter;
+
+}
+
+@media only screen and (max-width: 600px){
+
+  .navigation li{
+    display: run-in;
+    padding: 0 5px;
+    font-size: 100%;
+  }
+
+  .navigation a{
+    font-size: 3vw;
+  }
+
+  #navigation-div{
+    width:100%;
+    display: block;
+  }
+
+  #logo{
+    display: none;
+  }
+
+  #header-title{
+    width: 100%;
+  }
+
+  .siderbar li{
+    width: 100%;
+    display: block;
+  }
+
+  .items main {
+    height: 100%;
+    /*width: 60%;*/
+  }
+
+  #header-title{
+    /*width: 100%;*/
+    font-size: 10vw;
+    /*text-align:left;
+    display:inline-block;
+    vertical-align:middle;*/
+  }
+
+  /*.items aside {
+    width: 40%;
+    margin: 0;
+  }*/
+}
