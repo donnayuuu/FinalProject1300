@@ -103,7 +103,6 @@
   margin:auto;
   margin-top:100px;
   margin-bottom: 50px;
-
 }*/
 
 #sushi-icon{
@@ -500,10 +499,13 @@ p{
 @media only screen and (max-width: 600px){
 
   .navigation li{
-    display: block;
-    padding: 0px;
-    width: 100%;
-    float: none;
+    display: run-in;
+    padding: 0 5px;
+    font-size: 100%;
+  }
+
+  .navigation a{
+    font-size: 3vw;
   }
 
   #navigation-div{
@@ -522,5 +524,33 @@ p{
   .siderbar li{
     width: 100%;
     display: block;
+  }
+
+  .items main {
+    height: 100%;
+    width: 68%;
+    padding: 0px;
+    margin: 0px;
+    float: right;
+    border: none;
+  }
+
+  #header-title{
+    /*width: 100%;*/
+    font-size: 10vw;
+    /*text-align:left;
+    display:inline-block;
+    vertical-align:middle;*/
+  }
+
+  .items aside {
+    width: 30%;
+    margin: 0px;
+    float: left;
+    padding: 0px;
+  }
+
+  .sidebar ul{
+    padding: 0px;
   }
 }
